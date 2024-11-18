@@ -1,0 +1,256 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+main {
+  margin-top: 2rem;
+}
+h1, h2, h3, h4, h5 {
+  font-weight: 500;
+}
+img.avatar {
+  border: 5px solid #1a8141;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+.card h5 {
+  color: #1a8141;
+}
+.card img {
+  border-radius: 10px;
+}
+hr {
+  border: 0;
+  border-top: 2px dashed #ddd;
+  margin: 2rem 0;
+}
+a {
+  text-decoration: none;
+  color: #1a8141;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #0a612b;
+}
+.table td {
+  border-bottom: 1px solid #f1f1f1;
+}
+.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background-color: #1a8141;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+.button:hover {
+  background-color: #0a612b;
+}
+.button-container {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: stretch;
+  gap: 10px;
+}
+.small-button {
+  display: inline-block;
+  padding: 0.2rem 0.4rem; /* Smaller padding */
+  font-size: 0.8rem; /* Smaller font size */
+  color: #fff;
+  background-color: #1a8141;
+  border-radius: 3px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.small-button:hover {
+  background-color: #0a612b;
+}
+footer {
+  background-color: #f8f9fa;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+footer p {
+  margin: 0;
+}
+.section-divider {
+  font-size: 2rem; /* Default size for larger screens */
+  padding: 10px 20px; /* Default padding for larger screens */
+  text-align: center;
+  margin: 2rem 0;
+}
+.section-divider span {
+  display: inline-block;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+.section-divider:before,
+.section-divider:after {
+  content: '';
+  display: inline-block;
+  height: 1px;
+  width: 40%; /* Default width for larger screens */
+  background-color: #ddd;
+  vertical-align: middle;
+}
+
+/* Name and subtitle */
+.name {
+font-family: "Roboto", sans-serif; /* Using Lobster font for the name */
+font-size: 3rem; /* Large font size for the name */
+font-weight: Bold; /* Bold weight for the name */
+font-style: normal;
+color: #333; /* Dark color for the name */
+text-align: left; /* Left-aligned text */
+letter-spacing: 2px; /* Spacing between letters */
+}
+  
+
+.subtitle {
+font-family: 'Roboto', sans-serif; /* Using Roboto for the subtitle */
+font-size: 1.5rem; /* Slightly smaller font size */
+font-weight: 300; /* Lighter weight for the subtitle */
+color: #555; /* Subtle gray color */
+text-align: left; /* Left-aligned text */
+font-style: italic; /* Italicized text */
+letter-spacing: 1px; /* Slightly spaced letters */
+}
+
+/* Persona Section */
+#persona-summary .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+#persona-summary .col-md-6 {
+  flex: 1; /* Each block takes up half the width */
+}
+
+.card p {
+  font-size: 1rem;
+}
+
+#persona {
+  font-size: 0.9em;
+  margin-bottom: 0;
+}
+
+#persona .persona-item {
+  margin-bottom: 8px;
+}
+
+#persona .persona-item label {
+  font-weight: bold;
+  display: inline-block;
+  width: 120px;
+}
+
+#persona .persona-item .persona-value {
+  display: inline-block;
+  color: #555;
+}
+
+/* Work Experience Section */
+#werkervaring {
+  margin-top: 40px;
+  padding: 20px;
+}
+
+#werkervaring header.section-divider {
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin-bottom: 30px;  
+}
+
+#werkervaring header.section-divider h2 {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+}
+
+/* Job Entry Styles */
+.job-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #1a8141;
+}
+
+.company-name {
+  font-style: italic;
+  color: #555;
+}
+
+.job-duration {
+  font-size: 1em;
+  color: #777;
+}
+
+/* Work Description */
+.work-description {
+  margin-top: 15px;  /* Increased margin-top for better spacing */
+}
+
+.work-description p {
+  font-size: 1.1em;
+  color: #333;
+}
+
+.work-description ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.work-description ul li {
+  font-size: 1em;
+  color: #333;
+}
+
+/* Labels */
+.labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.label {
+  background-color: #1a8141;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 0.9em;
+  display: inline-block;
+}
+
+/* Small Screen Adjustments (optional) */
+@media (max-width: 768px) {
+  .col-12 {
+    margin-bottom: 20px;
+  }
+  
+  .labels {
+    justify-content: center;  /* Centers the labels on smaller screens */
+  }
+
+  .section-divider {
+    font-size: 1.5rem !important;
+    padding: 5px 10px !important;
+  }
+
+  .section-divider:before,
+  .section-divider:after {
+    width: 20%; /* Reduce the length of the lines */
+  }
+}

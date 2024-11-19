@@ -198,6 +198,12 @@ letter-spacing: 1px; /* Slightly spaced letters */
   color: #777;
 }
 
+/* Specific green styling for Werkervaring headings */
+.werkervaring-heading {
+  color: #1a8141; /* Bootstrap's green color */
+  font-weight: bold;
+}
+
 /* Work Description */
 .work-description {
   margin-top: 15px;  /* Increased margin-top for better spacing */
